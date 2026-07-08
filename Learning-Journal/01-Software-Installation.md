@@ -39,5 +39,5 @@ Purpose
 ---
 
 > Note
->
+> It takes me about 2 hours to make all software installed.07/07/2026
 > Download links are intentionally omitted from this tutorial, as they may become outdated over time. You can easily find the latest versions by searching GitHub or visiting the official websites of each project.
