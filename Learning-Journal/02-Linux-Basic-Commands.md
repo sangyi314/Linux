@@ -256,8 +256,6 @@ Means copy.
 
 Copy files or directories.
 
-### Syntax
-
 ```bash
 cp [OPTION] SOURCE DESTINATION
 ```
