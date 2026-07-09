@@ -223,7 +223,7 @@ touch file1.txt file2.txt file3.txt
 
 ## cat
 
-Display the entire contents of a file.
+Display the entire contents of a file.s
 
 ```bash
 cat file.txt
