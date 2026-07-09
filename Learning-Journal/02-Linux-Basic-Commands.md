@@ -327,6 +327,8 @@ rm -rf project
 >
 > Be extremely careful when using `rm -rf`, especially as the **root** user.
 
+*Learned up to here on 09/07/2026* 
+
 ---
 
 # Searching
