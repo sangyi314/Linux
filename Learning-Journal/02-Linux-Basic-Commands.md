@@ -309,6 +309,8 @@ Delete files or directories.
 Examples:
 
 ```bash
+rm [OPTION] FILE
+
 rm file.txt
 
 rm -r project
