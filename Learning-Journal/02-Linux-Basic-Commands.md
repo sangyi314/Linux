@@ -406,6 +406,8 @@ grep -n "main" main.c
 
 ## wc
 
+Means word count.
+
 Count lines, words, characters, or bytes.
 
 Examples:
