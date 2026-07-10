@@ -573,43 +573,215 @@ head -n 10 test.txt
 
 # Text Editor
 
-## vi Editor
+## vim
 
-### Command Mode Shortcuts
+A built-in Linux text editor.
 
-| Mode    | Key   | Description                                    |
-| ------- | ----- | ---------------------------------------------- |
-| Command | `i`   | Insert before the cursor.                      |
-| Command | `a`   | Insert after the cursor.                       |
-| Command | `I`   | Insert at the beginning of the current line.   |
-| Command | `A`   | Insert at the end of the current line.         |
-| Command | `o`   | Create a new line below and enter Insert mode. |
-| Command | `O`   | Create a new line above and enter Insert mode. |
-| Insert  | `Esc` | Return to Command mode.                        |
+Open a file:
+
+```bash
+vim FILE
+```
+
+Example:
+
+```bash
+vim test.txt
+```
 
 ---
 
-### Example Workflow
+## Insert Mode
+
+Enter Insert mode from Command mode.
+
+| Key   | Description                                 |
+| ----- | ------------------------------------------- |
+| `i`   | Insert before the cursor                    |
+| `a`   | Insert after the cursor                     |
+| `I`   | Insert at the beginning of the current line |
+| `A`   | Insert at the end of the current line       |
+| `o`   | Open a new line below and enter Insert mode |
+| `O`   | Open a new line above and enter Insert mode |
+| `Esc` | Return to Command mode                      |
+
+---
+
+## Cursor Movement
+
+Move the cursor in Command mode.
+
+| Key        | Description                       |
+| ---------- | --------------------------------- |
+| `↑` or `k` | Move up                           |
+| `↓` or `j` | Move down                         |
+| `←` or `h` | Move left                         |
+| `→` or `l` | Move right                        |
+| `0`        | Move to the beginning of the line |
+| `$`        | Move to the end of the line       |
+| `PageUp`   | Previous page                     |
+| `PageDown` | Next page                         |
+
+---
+
+## Search
+
+Search text inside a file.
+
+| Key        | Description    |
+| ---------- | -------------- |
+| `/keyword` | Search forward |
+| `n`        | Next match     |
+| `N`        | Previous match |
+
+Example:
+
+```text
+/Linux
+```
+
+---
+
+## Copy, Delete and Paste
+
+Useful editing commands.
+
+| Key        | Description              |
+| ---------- | ------------------------ |
+| `dd`       | Delete current line      |
+| `ndd`      | Delete **n** lines       |
+| `yy`       | Copy current line        |
+| `nyy`      | Copy **n** lines         |
+| `p`        | Paste below current line |
+| `u`        | Undo                     |
+| `Ctrl + r` | Redo                     |
+
+Examples:
+
+```text
+5dd
+```
+
+Delete five lines.
+
+```text
+3yy
+```
+
+Copy three lines.
+
+---
+
+## Jump Commands
+
+Quickly move to different positions.
+
+| Key  | Description          |
+| ---- | -------------------- |
+| `gg` | Go to the first line |
+| `G`  | Go to the last line  |
+
+---
+
+## Delete Part of a Line
+
+Delete specific parts of the current line.
+
+| Key   | Description                                           |
+| ----- | ----------------------------------------------------- |
+| `dG`  | Delete from current line to the end of the file       |
+| `dgg` | Delete from current line to the beginning of the file |
+| `d$`  | Delete from cursor to the end of the line             |
+| `d0`  | Delete from cursor to the beginning of the line       |
+
+---
+
+## Last Line Commands
+
+Commands entered after pressing `:`.
+
+| Command      | Description         |
+| ------------ | ------------------- |
+| `:w`         | Save file           |
+| `:q`         | Quit                |
+| `:wq`        | Save and quit       |
+| `:q!`        | Quit without saving |
+| `:set nu`    | Show line numbers   |
+| `:set paste` | Enable paste mode   |
+
+Example:
+
+```text
+:wq
+```
+
+---
+
+# Command Options
+
+Most Linux commands support options.
+
+Common features:
+
+* Options usually begin with `-`
+* Multiple short options can often be combined
+* Different commands support different options
+
+Example:
 
 ```bash
-vi test.txt
+ls -al
 ```
 
-Command mode:
+Equivalent to:
 
-```text
-i      # Insert before cursor
-Esc    # Return to command mode
+```bash
+ls -a -l
 ```
 
-Save and quit:
+---
 
-```text
-:w      Save file
-:q      Quit
-:wq     Save and quit
-:q!     Quit without saving
+# Help
+
+Display the help information for a command.
+
+**Syntax**
+
+```bash
+COMMAND --help
 ```
+
+Example:
+
+```bash
+ls --help
+```
+
+```bash
+cp --help
+```
+
+```bash
+grep --help
+```
+
+---
+
+## Summary
+
+| Category  | Commands                  |
+| --------- | ------------------------- |
+| Output    | `echo`                    |
+| Execute   | `` `command` ``           |
+| File View | `head` `tail`             |
+| Redirect  | `>` `>>`                  |
+| Editor    | `vi`                      |
+| Search    | `/` `n` `N`               |
+| Copy      | `yy` `nyy`                |
+| Delete    | `dd` `ndd` `d0` `d$` `dG` |
+| Jump      | `gg` `G`                  |
+| Save      | `:w` `:q` `:wq`           |
+| Help      | `--help`                  |
 
 ---
 
