@@ -745,8 +745,6 @@ ls -a -l
 
 Display the help information for a command.
 
-**Syntax**
-
 ```bash
 COMMAND --help
 ```
@@ -764,25 +762,6 @@ cp --help
 ```bash
 grep --help
 ```
-
----
-
-## Summary
-
-| Category  | Commands                  |
-| --------- | ------------------------- |
-| Output    | `echo`                    |
-| Execute   | `` `command` ``           |
-| File View | `head` `tail`             |
-| Redirect  | `>` `>>`                  |
-| Editor    | `vi`                      |
-| Search    | `/` `n` `N`               |
-| Copy      | `yy` `nyy`                |
-| Delete    | `dd` `ndd` `d0` `d$` `dG` |
-| Jump      | `gg` `G`                  |
-| Save      | `:w` `:q` `:wq`           |
-| Help      | `--help`                  |
-
 ---
 
 # Summary
