@@ -47,7 +47,7 @@ The sudo command allows an authorized user to run commands with elevated privile
 
 You can configure sudo in visudo(root) so that a user can run commands without entering a password.
 
-Example configuration:
+Example configuration(add in last line):
 
 ```bath
  sam ALL=(ALL) NOPASSWD: ALL 
