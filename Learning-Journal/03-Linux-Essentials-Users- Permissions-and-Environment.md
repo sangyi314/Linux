@@ -45,11 +45,13 @@ The sudo command allows an authorized user to run commands with elevated privile
 
 ### Passwordless sudo
 
-You can configure sudo in visudo so that a user can run commands without entering a password.
+You can configure sudo in visudo(root) so that a user can run commands without entering a password.
 
 Example configuration:
 
-text sam ALL=(ALL) NOPASSWD: ALL 
+```bath
+ sam ALL=(ALL) NOPASSWD: ALL 
+```
 
 This means:
 
