@@ -102,7 +102,7 @@ su - username
 
 * `su` switches to another user.
 * `su -` loads the target user's **login environment**.
-* `su - username` switches to a specific user while loading that user's environment variables.
+* `su - username` switches to a specific user while loading that user's environment variables(recommended).
 
 Using the hyphen (`-`) is recommended because it creates a complete login session.
 
@@ -112,7 +112,7 @@ Using the hyphen (`-`) is recommended because it creates a complete login sessio
 
 ```bash
 $ whoami
-alice
+sam
 
 $ su -
 Password:
@@ -124,7 +124,7 @@ root
 ### Output
 
 ```text
-alice
+sam
 root
 ```
 
