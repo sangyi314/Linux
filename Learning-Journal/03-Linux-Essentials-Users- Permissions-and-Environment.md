@@ -112,7 +112,7 @@ Using the hyphen (`-`) is recommended because it creates a complete login sessio
 
 ```bash
 $ whoami
-alice
+sam
 
 $ su -
 Password:
@@ -124,7 +124,7 @@ root
 ### Output
 
 ```text
-alice
+sam
 root
 ```
 
@@ -672,7 +672,7 @@ This command applies permissions to every file and subdirectory under `project/`
 ```bash
 $ ls -l script.sh
 
--rwxr-xr-x 1 alice staff 200 Jul 10 12:40 script.sh
+-rwxr-xr-x 1 sam staff 200 Jul 10 12:40 script.sh
 ```
 
 ---
@@ -745,10 +745,10 @@ Every Linux user has:
 For example:
 
 ```text
-User: alice
+User: sam
 UID : 1001
-Primary Group : alice
-Home Directory : /home/alice
+Primary Group : sam
+Home Directory : /home/sam
 Shell : /bin/bash
 ```
 
@@ -826,29 +826,29 @@ sudo useradd -m username
 ## Example
 
 ```bash
-sudo useradd -m alice
+sudo useradd -m sam
 ```
 
 This command creates:
 
 ```text
-/home/alice
+/home/sam
 ```
 
-as Alice's home directory.
+as sam's home directory.
 
 ---
 
 ## Example Session
 
 ```bash
-$ sudo useradd -m alice
+$ sudo useradd -m sam
 
-$ id alice
+$ id sam
 
-uid=1001(alice)
-gid=1001(alice)
-groups=1001(alice)
+uid=1001(sam)
+gid=1001(sam)
+groups=1001(sam)
 ```
 
 ---
@@ -890,13 +890,13 @@ id username
 ## Example
 
 ```bash
-id alice
+id sam
 ```
 
 Output:
 
 ```text
-uid=1001(alice) gid=1001(alice) groups=1001(alice)
+uid=1001(sam) gid=1001(sam) groups=1001(sam)
 ```
 
 ---
@@ -938,12 +938,14 @@ sudo usermod -aG groupname username
 
 > **Important:** Always use `-aG` together. Omitting `-a` may replace the user's existing supplementary groups.
 
+You can use the command "sudo gpasswd -d username groupname" to delete the user from the group.
+
 ---
 
 ## Example
 
 ```bash
-sudo usermod -aG devteam alice
+sudo usermod -aG devteam sam
 ```
 
 ---
@@ -951,18 +953,18 @@ sudo usermod -aG devteam alice
 ## Verify the Result
 
 ```bash
-id alice
+id sam
 ```
 
 Output:
 
 ```text
-uid=1001(alice)
-gid=1001(alice)
-groups=1001(alice),1002(devteam)
+uid=1001(sam)
+gid=1001(sam)
+groups=1001(sam),1002(devteam)
 ```
 
-Alice now belongs to the **devteam** group.
+sam now belongs to the **devteam** group.
 
 ---
 
@@ -991,13 +993,13 @@ sudo userdel -r username
 ## Example
 
 ```bash
-sudo userdel alice
+sudo userdel sam
 ```
 
 or
 
 ```bash
-sudo userdel -r alice
+sudo userdel -r sam
 ```
 
 ---
@@ -1006,8 +1008,8 @@ sudo userdel -r alice
 
 | Command            | Result                                   |
 | ------------------ | ---------------------------------------- |
-| `userdel alice`    | Remove the user only                     |
-| `userdel -r alice` | Remove the user and their home directory |
+| `userdel sam`      | Remove the user only                     |
+| `userdel -r sam`   | Remove the user and their home directory |
 
 ---
 
@@ -1077,7 +1079,7 @@ getent group
 $ getent passwd
 
 root:x:0:0:root:/root:/bin/bash
-alice:x:1001:1001::/home/alice:/bin/bash
+sam:x:1001:1001::/home/sam:/bin/bash
 ...
 ```
 
@@ -1088,7 +1090,7 @@ $ getent group
 
 root:x:0:
 staff:x:50:
-devteam:x:1002:alice
+devteam:x:1002:sam
 ...
 ```
 
@@ -1131,24 +1133,24 @@ The following example demonstrates a typical user and group management workflow.
 sudo groupadd devteam
 
 # Create a user
-sudo useradd -m alice
+sudo useradd -m sam
 
 # View user information
-id alice
+id sam
 
 # Add the user to a group
-sudo usermod -aG devteam alice
+sudo usermod -aG devteam sam
 
 # Verify group membership
-id alice
+id sam
 ```
 
 Expected output:
 
 ```text
-uid=1001(alice)
-gid=1001(alice)
-groups=1001(alice),1002(devteam)
+uid=1001(sam)
+gid=1001(sam)
+groups=1001(sam),1002(devteam)
 ```
 
 ---
