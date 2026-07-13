@@ -1118,7 +1118,7 @@ BOOTPROTO="static"
 
 ONBOOT="yes"
 
-IPADDR="192.168.88.131"
+IPADDR="192.168.88.130"
 
 NETMASK="255.255.255.0"
 
@@ -1167,7 +1167,7 @@ ifconfig
 ## Test Connectivity
 
 ```bash
-ping www.baidu.com
+ping [-c] www.baidu.com
 ```
 
 or
@@ -1175,6 +1175,8 @@ or
 ```bash
 ping 8.8.8.8
 ```
+
+-c represents test for c times.
 
 ---
 
