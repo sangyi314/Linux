@@ -17,9 +17,6 @@ In this chapter, you will learn how to:
 * Create and manage users and groups.
 * View user and group information.
 * Work with environment variables.
-* Perform common file operations.
-* Edit text files using Linux editors.
-* Publish your work to GitHub.
 
 ---
 
@@ -32,24 +29,6 @@ To use Linux efficiently, you need to understand how users, groups, and permissi
 This chapter covers the essential commands and concepts every Linux beginner should master, including practical command examples, expected outputs, and common mistakes to avoid.
 
 By the end of this chapter, you should be able to confidently perform common user administration tasks and manage file permissions in a Linux environment.
-
----
-
-# Learning Objectives
-
-After completing this chapter, you should be able to:
-
-* Understand the difference between **root** and normal users.
-* Switch users using `su`.
-* Execute commands with `sudo`.
-* Read Linux file ownership and permissions.
-* Modify ownership using `chown`.
-* Change permissions using `chmod`.
-* Create and manage users and groups.
-* View user IDs and group memberships.
-* Display environment variables.
-* Perform common file operations.
-* Edit files using `vi` or `nano`.
 
 ---
 

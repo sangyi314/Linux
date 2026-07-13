@@ -6,20 +6,6 @@
 
 ---
 
-# Table of Contents
-
-- [1. View Command Manual (man)](#1-view-command-manual-man)
-- [2. Software Installation](#2-software-installation)
-  - [2.1 yum (CentOS)](#21-yum-centos)
-  - [2.2 apt (Ubuntu)](#22-apt-ubuntu)
-- [3. Service Management (systemctl)](#3-service-management-systemctl)
-- [4. Symbolic Links](#4-symbolic-links)
-- [5. Date and Time](#5-date-and-time)
-- [6. Time Zone Configuration](#6-time-zone-configuration)
-- [7. Time Synchronization (NTP)](#7-time-synchronization-ntp)
-
----
-
 # 1. View Command Manual (man)
 
 ## Purpose
