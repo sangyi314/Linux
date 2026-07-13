@@ -6,6 +6,170 @@
 
 ---
 
+# 0. Linux Terminal Essentials
+
+Before learning Linux commands, it is helpful to become familiar with some commonly used terminal shortcuts and productivity tips. These shortcuts can greatly improve your efficiency when working in the command line.
+
+---
+
+## 0.1 Command History
+
+### View Command History
+
+```bash
+history
+```
+
+Display all previously executed commands.
+
+Example:
+
+```text
+100  ls
+101  pwd
+102  cd /home
+103  vim test.txt
+104  history
+```
+
+---
+
+### Execute a Previous Command
+
+Run command number **102** again.
+
+```bash
+!102
+```
+
+Run the last executed command.
+
+```bash
+!!
+```
+
+Run the most recent command beginning with **git**.
+
+```bash
+!git
+```
+
+---
+
+### Search Command History
+
+Press:
+
+```text
+Ctrl + R
+```
+
+Then type a keyword.
+
+Example:
+
+```text
+(reverse-i-search)`ssh':
+```
+
+Press **Enter** to execute the matched command.
+
+---
+
+### Clear History
+
+```bash
+history -c
+```
+
+---
+
+## 0.2 Keyboard Shortcuts
+
+| Shortcut | Description |
+|----------|-------------|
+| ↑ | Previous command |
+| ↓ | Next command |
+| Tab | Auto-complete commands or filenames |
+| Tab Tab | Show all possible matches |
+| Ctrl + R | Search command history |
+| Ctrl + A | Move cursor to beginning of line |
+| Ctrl + E | Move cursor to end of line |
+| Ctrl + U | Delete from cursor to beginning |
+| Ctrl + K | Delete from cursor to end |
+| Ctrl + W | Delete previous word |
+| Ctrl + Y | Paste deleted text |
+| Ctrl + C | Terminate current command |
+| Ctrl + Z | Suspend current process |
+| Ctrl + L | Clear terminal screen |
+| Ctrl + D | Exit the current shell |
+
+---
+
+## 0.3 Auto Completion
+
+Press:
+
+```text
+Tab
+```
+
+Example:
+
+```text
+sys<Tab>
+```
+
+becomes
+
+```text
+systemctl
+```
+
+Press **Tab** twice to display all available matches.
+
+---
+
+## 0.4 Useful Tips
+
+Repeat the previous command.
+
+```bash
+!!
+```
+
+Run the previous command with `sudo`.
+
+```bash
+sudo !!
+```
+
+Display the current working directory.
+
+```bash
+pwd
+```
+
+Display the current user.
+
+```bash
+whoami
+```
+
+Display the current shell.
+
+```bash
+echo $SHELL
+```
+
+---
+
+## Summary
+
+Mastering these shortcuts can significantly improve your efficiency when using the Linux terminal. They reduce repetitive typing, speed up navigation, and make command-line work much more productive.
+
+---
+
 # 1. View Command Manual (man)
 
 ## Purpose
