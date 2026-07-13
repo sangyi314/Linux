@@ -1164,22 +1164,6 @@ ifconfig
 
 ---
 
-## Test Connectivity
-
-```bash
-ping [-c] www.baidu.com
-```
-
-or
-
-```bash
-ping 8.8.8.8
-```
-
--c represents test for c times.
-
----
-
 ## Tips
 
 Always ensure:
@@ -1527,22 +1511,6 @@ If ping fails:
 - Check the gateway.
 - Check DNS configuration.
 - Ensure the firewall allows ICMP.
-
----
-
-# Part 2 Summary
-
-| Command | Purpose |
-|----------|---------|
-| ifconfig | View IP address |
-| ip addr | View network interfaces |
-| hostname | Display hostname |
-| hostnamectl | Configure hostname |
-| ps | Display processes |
-| kill | Terminate processes |
-| netstat | View ports and connections |
-| nmap | Scan hosts and ports |
-| ping | Test network connectivity |
 
 ---
 # 13. File Download
